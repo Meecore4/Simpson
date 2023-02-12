@@ -1,0 +1,7 @@
+<h1>Personnages Simpsons</h1>
+
+<div class="position" *ngFor="let item of personnage; let photo = index">
+  <img src="{{ personnage[photo].image }}" />
+  <p>{{ personnage[photo].quote }}</p>
+  <button>{{personnage[photo].character}}</button>
+</div>
